@@ -16,17 +16,16 @@ const Footer = (): JSX.Element => {
                     buttonText="Support Ukraine"
                     supportLink="https://war.ukraine.ua/support-ukraine/"/>
 
-                <p className={styles.createdBy}>
-                    web-page created by
-
-                </p>
+                <span className={styles.createdBy}>
+                    created by
+                </span>
                 <SupportButton
                     buttonImage={artsakhFlag}
                     buttonText="Support Artsakh"
                     supportLink="https://artsakhsupportbody.com/"/>
             </div>
                 <span className={styles.creator} style={{animationName: keyframes.textGradientMovement}}>
-                    {' '}Sicmundus
+                    Sicmundus
                 </span>
 
             <span className={styles.rights}>
