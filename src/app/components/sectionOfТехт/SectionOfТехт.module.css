@@ -1,0 +1,73 @@
+.sectionOfAI {
+    width: calc(100% - 30px);
+    height: calc(70% - 30px);
+    margin-top: 100px;
+    padding: 15px;
+
+    background-color: var(--dark-background);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.textPart {
+    width: 60%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    color: var(--light-text-color);
+    font-style: italic;
+    text-indent: var(--index);
+}
+.titleOfSection {
+    font-size: calc(var(--index) * 5);
+    font-weight: 100;
+    letter-spacing: calc(var(--index) * 0.5);
+}
+.paragraphOfSection {
+    font-size: calc(var(--index) * 0.8);
+    font-weight: 500;
+    letter-spacing: calc(var(--index) * 0.1);
+    line-height: calc(var(--index) * 1.5);
+}
+.imageContainer {
+    width: 30vw;
+    aspect-ratio: 1.5;
+
+    border-top: 2px solid var(--red-color);
+    border-right: 2px solid var(--red-color);
+    border-bottom: 2px solid var(--blue-color);
+    border-left: 2px solid var(--blue-color);
+    border-radius: var(--standart-border-radius);
+
+    background-image: url('../../../../public/images/imageGPT.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.blurBackground {
+    width: 100%;
+    height: 100%;
+
+    border-radius: var(--standart-border-radius);
+
+    backdrop-filter: blur(10px);
+
+}
+.imageGPT {
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+
+    border-top: 2px solid var(--red-color);
+    border-right: 2px solid var(--red-color);
+    border-bottom: 2px solid var(--blue-color);
+    border-left: 2px solid var(--blue-color);
+    border-radius: var(--standart-border-radius);
+
+}
+.imageGPT.animated { transition-duration: var(--transition-time); }

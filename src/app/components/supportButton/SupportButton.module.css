@@ -1,0 +1,30 @@
+.supportButton {
+    width: fit-content;
+    height: 100%;
+    margin-top: 10px;
+    padding: 3px 6px;
+
+    /*border: 1px solid var(--light-text-color);*/
+    border-radius: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: border var(--transition-time);
+    cursor: pointer;
+}
+.buttonImage {
+    width: calc(var(--index) * 1.5);
+    height: calc(var(--index) * 1.5);
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+.buttonText {
+    margin-left: 10px;
+
+    color: var(--light-text-color);
+    font-size: calc(var(--index) * 0.5);
+}

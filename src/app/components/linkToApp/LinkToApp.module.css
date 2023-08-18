@@ -1,0 +1,21 @@
+.linkToApp {
+    padding: 10px 20px;
+
+    background-color: var(--light-text-color);
+
+    border-radius: var(--index);
+
+    color: var(--darker-background);
+    font-size: var(--index);
+
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+
+    transition: scale var(--transition-time);
+    cursor: pointer;
+    z-index: 1;
+}
+.linkToApp:hover {
+    scale: 1.1;
+}

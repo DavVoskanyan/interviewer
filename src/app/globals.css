@@ -1,16 +1,36 @@
 :root {
+  --index: calc(1vw + 1vh);
+  --standart-border-radius: 15px;
+
+  --transition-time: 250ms;
+
   --dark-background: #222222;
   --darker-background: #121212;
+
+  --light-text-color: #f3f3f3;
+
+  --red-color: #b90b2b;
+  --blue-color: #114ba8;
+
+  --gradient: linear-gradient(45deg, var(--blue-color) 45%, var(--red-color) 45%);
 }
 
 * {
   margin: 0;
   padding: 0;
+
   border: none;
   outline: none;
+
   text-decoration: none;
 }
 
-body {
+html, body {
+  width: 100%;
+  height: 100%;
+
   background-color: var(--darker-background);
+
+  scroll-behavior: smooth;
 }
+
