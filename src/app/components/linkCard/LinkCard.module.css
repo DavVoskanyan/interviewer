@@ -1,0 +1,47 @@
+
+.linkCard {
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--dark-background);
+    background-size: calc(var(--index) * 10);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 15px;
+    overflow: hidden;
+
+    position: relative;
+
+    display: grid;
+    place-items: center;
+
+    transition-duration: var(--transition-time);
+
+    cursor: pointer;
+}
+.linkCard:hover { scale: 1.02; }
+.linkCard:focus-visible {
+    scale: 1.02;
+    outline: 2px solid var(--light-text-color);
+}
+.cardTitle {
+    color: transparent;
+    font-size: calc(var(--index) * 4);
+    font-weight: 700;
+    text-align: center;
+
+    background-image: var(--gradient);
+    background-clip: text;
+    background-size: 130%;
+
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+    transition: scale var(--transition-time);
+}
+.linkCard:hover > .cardTitle,
+.linkCard:focus-visible > .cardTitle {
+    scale: 0.8;
+}

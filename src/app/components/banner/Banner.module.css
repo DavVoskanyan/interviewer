@@ -1,0 +1,33 @@
+.banner {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../../public/images/bannerImage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.darkLayer {
+    width: 100%;
+    height: 100%;
+    background-color: #00000055;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.onBannerTitle {
+    color: var(--light-text-color);
+    font-size: calc(var(--index) * 3);
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -1px;
+    user-select: none;
+}
+.onBannerText {
+    width: 50%;
+    color: color-mix(in srgb, var(--light-text-color), transparent 10%);
+    font-size: calc(var(--index) * 1);
+    font-weight: 100;
+    text-align: center;
+    user-select: none;
+}
