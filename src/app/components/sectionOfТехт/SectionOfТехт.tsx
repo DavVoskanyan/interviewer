@@ -33,7 +33,7 @@ const SectionOf = (props: any): ReactElement => {
     })
 
     return (
-        <div id='sectionOfAI'
+        <div id={props.elementId}
              ref={componentMainElement}
              className={styles.sectionOfAI}
              style={{ backgroundColor: `var(${props.backgroundColor})`}}>

@@ -1,0 +1,32 @@
+.main {
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--darker-background);
+    display: grid;
+    place-items: center;
+}
+.contentContainer {
+    width: 35%;
+    height: 75%;
+
+    border: 2px solid var(--light-text-color);
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+}
+.formsContainer {
+    width: 100%;
+    height: 100%;
+    margin: 15px;
+
+    background: #000;
+    
+    position: relative;
+    overflow: hidden;
+}

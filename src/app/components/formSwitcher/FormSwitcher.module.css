@@ -1,0 +1,50 @@
+.formSwitcher {
+    width: 80%;
+    height: 10%;
+    margin-top: 15px;
+    padding: 5px;
+
+    background-color: var(--darker-background);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+
+    cursor: pointer;
+}
+.textBackground {
+    width: 50%;
+    height: calc(100% - 10px);
+
+    border-radius: 10px;
+
+    position: absolute;
+    top: 5px;
+
+    transition: translate var(--transition-time);
+    z-index: 0;
+}
+.textBackground.login {
+    background-color: var(--blue-color);
+    translate: 0;
+}
+.textBackground.signup {
+    background-color: var(--red-color);
+    translate: calc(100% - 10px) 0;
+}
+
+.switcherOption {
+    width: 50%;
+
+    /*color: var(--darker-background);*/
+    font-size: calc(var(--index) * 1.5);
+
+    color: var(--light-text-color);
+    transition: color var(--transition-time);
+    z-index: 1;
+}
+.switcherOption.active {
+    color: var(--light-text-color);
+}
